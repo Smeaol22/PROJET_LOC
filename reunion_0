@@ -1,0 +1,14 @@
+12 mai 2017
+
+TO DO LIST
+
+-> diagramme UML
+
+
+
+*Les BDD
+-> bdd ingredients [id, noms]
+
+-> bdd recettes [id, titre, recettes, ingédients, difficultés, temps]
+
+-> bdd utilisateurs [id primary_key, users, passwd]

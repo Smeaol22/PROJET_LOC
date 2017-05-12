@@ -2,15 +2,24 @@
 
 TO DO LIST
 
+-> définir un nom de projet !!!!!!
 -> diagramme UML
+-> définir les taches de chacun
+
 
 
 
 *Les BDD
 -> bdd ingredients [id, noms]
+-> bdd recettes [id, titre, recettes, ingrédients,quantitées, difficultés, temps,commentaires]
+-> bdd utilisateurs [id primary_key, users, passwd, niveau]
+-> bdd ingredients frigo ajout/supression
 
--> bdd recettes [id, titre, recettes, ingédients,quantitées, difficultés, temps]
+*Enregistrement
+-> user // pwd
+->formulaire on détermine le niveau de cuisine en étoiles
 
--> bdd utilisateurs [id primary_key, users, passwd]
 
--> bdd ingredients frigo 
+*ref/biblio
+
+->https://openclassrooms.com/forum/sujet/base-de-donnee-pour-gateaux

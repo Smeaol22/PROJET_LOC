@@ -9,7 +9,7 @@ TO DO LIST
 *Les BDD
 -> bdd ingredients [id, noms]
 
--> bdd recettes [id, titre, recettes, ingédients, difficultés, temps]
+-> bdd recettes [id, titre, recettes, ingédients,quantitées, difficultés, temps]
 
 -> bdd utilisateurs [id primary_key, users, passwd]
 

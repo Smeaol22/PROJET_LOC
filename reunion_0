@@ -1,23 +1,27 @@
 12 mai 2017
-
+ niv 0 priorité max
+ niv 1 pas prioritaire
+ niv 2 pas obligatoire
+ 
 TO DO LIST
 
--> définir un nom de projet !!!!!!
--> diagramme UML
--> définir les taches de chacun
+-> définir un nom de projet !!!!!!  niv 0
+-> diagramme UML  niv 0
+-> définir les taches de chacun  niv 0
 
 
 
 
 *Les BDD
--> bdd ingredients [id, noms, unités]
--> bdd recettes [id, titre, recettes, ingrédients,quantitées, difficultés, temps,commentaires]
--> bdd utilisateurs [id primary_key, users, passwd, niveau]
--> bdd ingredients frigo ajout/supression
+-> bdd ingredients [id, noms, unités] niv 0
+-> bdd recettes [id, titre, recettes, ingrédients,quantitées, difficultés, temps,commentaires]  niv 0
+
+-> bdd utilisateurs [id primary_key, users, passwd, niveau]  niv 1
+-> bdd ingredients frigo ajout/supression  niv 2
 
 *Enregistrement
--> user // pwd
-->formulaire on détermine le niveau de cuisine en étoiles
+-> user // pwd  niv 1
+->formulaire on détermine le niveau de cuisine en étoiles  niv 1
 
 
 *ref/biblio

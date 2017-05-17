@@ -1,31 +1,28 @@
 DROP DATABASE IF EXISTS Recettes;
-DROP DATABASE IF EXISTS Ingredients;
 DROP DATABASE IF EXISTS Identifiants;
 
-
-
 CREATE DATABASE IF NOT EXISTS Recettes;
-CREATE DATABASE IF NOT EXISTS Ingredients;
 CREATE DATABASE IF NOT EXISTS Identifiants;
 
 
 USE Recettes;
+
 DROP TABLE IF EXISTS RECETTES;
 
 CREATE TABLE RECETTES (
 	ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	titre VARCHAR(255),
 	recettes TEXT,
-	ingredients INT,
+	ingredients TEXT,
 	quantitees FLOAT,
 	difficultes INT, 
-	temps TIME, 
+	temps TIME
 );
 
-USE Ingredients;
-DROP TABLE IF EXISTS NOMS;
 
-CREATE TABLE NOMS (
+DROP TABLE IF EXISTS Ingredients;
+
+CREATE TABLE Ingredients (
 	ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	noms VARCHAR(255)
 );
@@ -41,3 +38,6 @@ CREATE TABLE USERS (
 	passwd VARCHAR(255),
 	difficultes INT
 );
+
+
+

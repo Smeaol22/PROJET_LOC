@@ -36,3 +36,16 @@ Images libres de droits:
 
 *idées zoning:
 -->mettre une première sélection: entrée, plat, dessert
+
+
+NOS IDEES MERVEILLEUSES:
+
+->Intégrer des niveaux de difficultés par recettes.
+->Proposer en accueil des produits de saison.
+->Proposer des recettes selon le niveau de l'utilisateur.
+->Proposer des plats selon ce que sait faire l'utilisateur.
+->Proposer un minuteur et affichage des étapes en temps réel.
+->Implémenter un système de vote pour ajuster le niveau de difficulté et le prix des recettes.
+->
+->Contrainte de BDD: entrée plat dessert; viande poisson végétarien; 
+->

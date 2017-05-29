@@ -1,7 +1,7 @@
 12 mai 2017
- niv 0 priorité max
- niv 1 pas prioritaire
- niv 2 pas obligatoire
+ niv 0 priorité max -- Must Have
+ niv 1 pas prioritaire -- Should Have
+ niv 2 pas obligatoire -- Could Have - Want Have
  
 TO DO LIST
 
@@ -54,3 +54,27 @@ NOS IDEES MERVEILLEUSES:
 
 
 penser à faire une page: "connexion" ou "inscription".
+
+
+BESOIN UTILISATEUR:
+
+- Obtenir recette selon le nom. niv 0
+- Obtenir une recette selon ses ingédients. niv 0
+- Obtenir une recette selon ses ingrédients et son niveau. niv 1
+- Obtenir une recette selon le choix entré, plat, dessert, végétarien et autres conditions. niv 1 
+- Definir un profil + log. niv 1
+- Definir un niveau dans le profil. niv 1
+- Obtenir une recette selon le profil de l'utilisateur(en fonction de ce qu'il a déjà fait). niv 2
+- Obtenir un historique des recettes. niv 2
+- Retrouver des produits aléatoires comme idée de départ. niv 2
+- Retrouver des produits de saisons aléatoires.niv 2
+
+
+FONCTIONNALITES DES PLUS BASIQUES AUX PLUS COMPLEXES:
+- (BDD recettes)
+- Affichage d'une recette.
+- Afficher une liste de recette.
+- Recherche d'une recette par nom.
+- Recherche d'une recette par ingrédients.
+- Inscription utilisateur.
+- 

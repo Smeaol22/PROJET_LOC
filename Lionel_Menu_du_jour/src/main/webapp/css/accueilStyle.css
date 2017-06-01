@@ -1,0 +1,208 @@
+body{
+	margin: 0;
+	padding:0;
+	width:100%;
+	font-family:Estrangelo Edessa;
+}
+
+header.top{
+	background:url(../images/fond_bois.jpg)no-repeat;
+	padding:0px 0px;
+	width:100%;
+	height:222px;
+	box-shadow: 3px 3px 3px #000;
+}
+
+
+header.top .Titre h1{
+	padding: 0% 0% 0% 52%;
+	margin:0;
+	font-family: 'Indie Flower', cursive;
+	text-shadow: 4px 4px 4px #000;
+	font-size: 85px;
+	font-weight:normal;
+	color: #fff;
+}
+
+header.top .Titre h2{
+	padding: 0% 0% 0% 52%;
+	margin:0;
+	font-family: 'Indie Flower', cursive;
+	text-shadow: 4px 4px 4px #000;
+	font-size: 38px;
+	font-weight:normal;
+	color: #fff;
+	
+}
+header.top .Titre{
+	float:left;
+	padding: 2% 020% 0% 0%;
+}
+
+.imgLog {
+	padding:06% 0% 03% 0%;
+
+}
+.log{
+	padding:0% 0% 0% 0%;
+	transform : scale(1);
+	transition :transform 0.8s ease 0s;
+	border-radius:50%;
+}
+
+.log:hover{
+	opacity:0.6;
+	transform: scale(1.2);
+}
+
+.FirstPart{
+	padding: 0% 0% 38% 0%;
+	width: 100%;
+  background: ;
+	margin: 0% 0%;
+	border-bottom: 1px solid #bebeba;
+	
+}
+.RecetteDuJour{
+	
+	padding: 0% 0% 0% 0%;
+	width:48%;
+	/* background: #3332; -*/
+	float:left;
+}
+
+.RecetteDuJour h2{
+	
+	padding: 0% 0% 0% 0%;
+	text-align: center;
+}
+
+.imgRecdj{
+	
+	padding: 0% 0% 0% 6%;
+	
+}
+.FirstPart p{
+	padding: 0% 3% 0% 0%;
+	text-align: center;
+}
+
+
+.IngredientsDuJour{
+	padding: 2% 0% 0% 0%;
+	width:48%;
+	/* background: #3332; -*/
+	float: right;
+}
+
+.IngredientsDuJour ul{
+	padding: 0% 0% 0% 0%;
+	margin:0 0;
+	width: 32.85%;
+	display: inline-block;
+  list-style: none;
+	/* background: #3332; -*/
+	text-align:center;
+}
+.IngredientsDuJour ul li{
+	padding: 14% 0% 0% 0%;
+}
+
+
+
+.IngredientsDuJour ul li a{
+	padding: 0% 0% 0% 0%;
+	/* background: #3332; -*/
+	text-decoration:none;
+	color:black; 
+	text-align: center;
+	font-size:20px;
+}
+
+.SecondPart {
+	margin: 0 0;
+	border-bottom: 1px solid #bebeba;
+}
+
+.SecondPart h2{
+  margin: 0 0;
+	padding: 1% 0% 1% 0%;
+
+}
+
+.options ul{
+	padding: 0% 13% 0% 13%;
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+}
+
+.options ul li a img{
+	transform: scale(1);
+	transition :transform 0.8s ease 0s;
+	border-radius:50%;
+	box-shadow: 2px 2px 2px #000;
+}
+
+.options ul li a img:hover{
+	transform: scale(1.2);
+	box-shadow: 2px 2px 2px #000;
+}
+
+div.ThirdPart {
+	background: #3332;
+	margin: 0;
+	width:100%;
+	padding:0% 0% 05% 0%;
+}	
+
+div.ThirdPart h2{
+	margin: 0 0;
+	padding: 01% 0% 02% 02%;
+}
+
+
+form{
+	margin: 0 ;
+	padding: 0% 30% 0% 30%;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border:none;
+	margin-top:5px;
+	color: #666666;
+	font-size: 14px;
+}
+
+form p{
+	font-size:20px;
+	font-weight:400;
+	padding-bottom:0px;
+	color: #19191a;
+	margin:10px 0;
+}
+
+.submit {
+	width:20% !important;
+	margin:0;
+	margin-right: -20px !important;
+	float:right;
+}
+.submit input{
+	background: #dfbf9f;
+	border: 1px solid #dfbf9f.;
+	color:#000;
+	font-size: 15px;
+}
+.submit  input:hover{
+
+	background:#fff;
+	transition: all 0.5s ease 0.1s;
+	border: 1px solid #38c4a5;
+
+}
+
+

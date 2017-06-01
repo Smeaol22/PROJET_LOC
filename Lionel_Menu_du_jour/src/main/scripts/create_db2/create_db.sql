@@ -1,0 +1,56 @@
+
+DROP DATABASE IF EXISTS Recettes2;
+DROP DATABASE IF EXISTS Identifiants;
+
+CREATE DATABASE IF NOT EXISTS Recettes2;
+CREATE DATABASE IF NOT EXISTS Identifiants;
+
+
+USE Recettes2;
+
+DROP TABLE IF EXISTS RECETTES;
+
+CREATE TABLE RECETTES (
+	ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	titre VARCHAR(255),
+	recettes TEXT,
+	difficultes INT(5),
+	types int(3),
+	veg int(1))ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+DROP TABLE IF EXISTS Ingredients;
+
+CREATE TABLE Ingredients (ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	noms VARCHAR(255),
+	Unit int(10)),
+	ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+
+DROP TABLE IF EXISTS Table_liaison;
+
+CREATE TABLE Table_liaison (
+	ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	id_recettes int(11) NOT NULL,
+	id_ingredients int(11) NOT NULL,
+	quantity float NOT NULL,
+	UNIQUE KEY `ID_UNIQUE` (ID),
+	KEY FK_Table_liaison_Recettes_index (id_recettes),
+	CONSTRAINT FK_Table_liaison_Recettes FOREIGN KEY (id_recettes)
+	REFERENCES RECETTES (ID) ON DELETE NO ACTION ON UPDATE NO ACTION,
+	KEY FK_Table_liaison_Ingredients_index (id_ingredients),
+	CONSTRAINT  FK_Table_liaison_Ingredients FOREIGN KEY (id_ingredients)
+	REFERENCES Ingredients (ID) ON DELETE NO ACTION ON UPDATE NO ACTION,	
+	Unit int(10))ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+USE Identifiants;
+DROP TABLE IF EXISTS USERS;
+CREATE TABLE USERS (ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,users VARCHAR(255),passwd VARCHAR(255),difficultes INT)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+select * from recettes2
+
+

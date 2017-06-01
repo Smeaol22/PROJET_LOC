@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Fichier de configuration ORM (Object-Relational Mapping) qui décrit 
+	le lien entre les objets Java et les tables relationnelles de la base de 
+	données. Il faut déclarer un élément entity pour chaque objet Java utilisé 
+	et configurer le lien des attributs Java avec les différentes colonnes de 
+	la base de données. -->
+<entity-mappings version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_2_0.xsd">
+
+	
+
+
+
+	<entity class="fr.projetloc.entity.MenuDuJour">
+		<table name="Recettes" />
+		<attributes>
+			<id name="id">
+				<column name="id" />
+				<!-- AUTO_INCREMENT -->
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<basic name="titre">
+				<column name="titre" />
+			</basic>
+			<basic name="recettes">
+				<column name="recettes" />
+			</basic>
+			<basic name="difficultes">
+				<column name="difficultes" />
+			</basic>
+			<basic name="types">
+				<column name="types" />
+			</basic>
+			<basic name="veg">
+				<column name="veg" />
+			</basic>
+		</attributes>
+	</entity>
+
+	
+</entity-mappings>

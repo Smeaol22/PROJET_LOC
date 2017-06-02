@@ -17,7 +17,6 @@ public class MenuDuJour implements Serializable {
 	private Integer types;
 
 	private Boolean veg;
-
 	
 	/* (non-Javadoc)
 	 * @see java.lang.Object#hashCode()

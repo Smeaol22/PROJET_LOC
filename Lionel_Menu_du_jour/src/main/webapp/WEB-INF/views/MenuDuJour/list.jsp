@@ -39,31 +39,34 @@
 				</tr>
 			</thead>
 			<tbody>
-
-
-				<c:url value="/MenuDuJour/" var="MenuDuJourUrl" />
-				<c:forEach items="${menuDuJourList}" var="menuDuJour">
-					<tr id="Recettes_${Recettes.id}">
-						<td>${Recettes.id}</td>
-						<td>${Recettes.titre}</td>
-						<td>${Recettes.recettes}</td>
-						<td>${Recettes.difficultes}</td>
-						<td>${Recettes.types}</td>
-						<td>${Recettes.veg}</td>
+			<c:url value="/images" var="imgUrlPrefix" />
+			<c:url value="/MenuDuJour/delete.html" var="deleteUrlPrefix" />
+			<c:forEach items="${menuDuJourList}" var="menuDujour">
+					<tr>
+						<td>${menuDujour.id}</td>
+						<td>${menuDujour.titre}</td>
+						<td>${menuDujour.recettes}</td>
+						<td>${menuDujour.difficultes}</td>
+						<td>${menuDujour.types}</td>
+						<td>${menuDujour.veg}</td>
 					</tr>
+					<td>
+						<a href="${deleteUrlPrefix}?id=${menuDujour.id}">
+								<img src="${imgUrlPrefix}/delete.png">
+						</a>
+						<a href="MenuDuJour/add.html">
+								<img src="${imgUrlPrefix}/configure.png">
+						</a>
+						<a href="MenuDuJour/update.html">
+								<img src="${imgUrlPrefix}/configure.png">
+						</a>
+					</td>
 				</c:forEach>
 			</tbody>
 		</table>
 	</div>
 
 
-	<script type="text/javascript">
-		$("#RecettesTable").DataTable();
-		$('#RecettesTable tbody tr').each(
-			(index, line) => $(line).click(
-				(event) => {
-					var RecettesId = event.currentTarget.id.split('_')[1];);
-				}));
-	</script>
+	<script type="text/javascript">$("#MenuDuJourTable").DataTable();</script>
 </body>
 </html>

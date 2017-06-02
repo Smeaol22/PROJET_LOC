@@ -12,7 +12,7 @@
 		<h1>${not empty Recettes ? "Modifier une recette existante :" : "Créer une nouvelle recette :" }</h1>
 		<c:url value="/Recettes/edit.html" var="postUrl" />
 		 <form:form action="${postUrl}" method="post" modelAttribute="Recettes">
-		 	<form:hidden path="ID"/>
+		 	<form:hidden path="id"/>
 		 	<div class="form-group">
 		 		<label for="titre">Nom :</label>
 		 		<form:input path="titre" id="titre" class="form-control" />

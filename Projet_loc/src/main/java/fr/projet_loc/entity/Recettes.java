@@ -11,6 +11,7 @@ public class Recettes implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
+	@NotEmpty
 	private Integer id;
 
 	@NotEmpty

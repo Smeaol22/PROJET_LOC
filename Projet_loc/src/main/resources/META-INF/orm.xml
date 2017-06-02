@@ -19,8 +19,8 @@
 			<basic name="noms">
 				<column name="noms" />
 			</basic>
-			<basic name="Unit">
-				<column name="Unit" />
+			<basic name="unit">
+				<column name="unit" />
 			</basic>
 		</attributes>
 	</entity>
@@ -33,11 +33,21 @@
 				<!-- AUTO_INCREMENT -->
 				<generated-value strategy="IDENTITY" />
 			</id>
-			<basic name="titre"/>
-			<basic name="recettes"/>
-			<basic name="difficultes"/>
-			<basic name="types"/>
-			<basic name="veg"/>
+			<basic name="titre">
+				<column name="titre" />
+			</basic>
+			<basic name="recettes">
+				<column name="recettes" />
+			</basic>
+			<basic name="difficultes">
+				<column name="difficultes" />
+			</basic>
+			<basic name="types">
+				<column name="types" />
+			</basic>
+			<basic name="veg">
+				<column name="veg" />
+			</basic>
 		</attributes>
 	</entity>
 
@@ -49,16 +59,16 @@
 				<!-- AUTO_INCREMENT -->
 				<generated-value strategy="IDENTITY" />
 			</id>
-			<basic name="quantity" />
-			
-			
-			
-			<one-to-one name="Recettes">
-				<join-column name="id_recettes" referenced-column-name="id" />
+			<basic name="quantity" >
+					<column name="quantity" />
+			</basic>
+
+			<one-to-one name="recettes">
+				<join-column name="id_recettes"/>
 			</one-to-one>
 			
-			<one-to-one name="Ingredients">
-				<join-column name="id_ingredients" referenced-column-name="id" />
+			<one-to-one name="ingredients">
+				<join-column name="id_ingredients"/>
 			</one-to-one>
 		</attributes>
 	</entity>

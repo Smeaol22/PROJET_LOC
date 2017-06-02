@@ -24,20 +24,20 @@
 				<c:url value="/Recettes/delete.html" var="deleteUrlPrefix" />
 				<c:url value="/RecettesIngredients/" var="RecettesIngredientsUrl" />
 				<c:forEach items="${RecettesList}" var="Recettes">
-					<tr id="Recettes_${Recettes.ID}">
-						<td>${Recettes.ID}</td>
+					<tr id="Recettes_${Recettes.id}">
+						<td>${Recettes.id}</td>
 						<td>${Recettes.titre}</td>
 						<td>${Recettes.recettes}</td>
 						<td>${Recettes.types}</td>
 						<td>${Recettes.veg}</td>
 						<td>
-							<a href="${editUrlPrefix}/${Recettes.ID}.html">
+							<a href="${editUrlPrefix}/${Recettes.id}.html">
 								<img src="${imgUrlPrefix}/edit.png">
 							</a>
-							<a href="${RecettesIngredientsUrl}/edit.html?RecettesID=${Recettes.ID}">
+							<a href="${RecettesIngredientsUrl}/edit.html?RecettesId=${Recettes.id}">
 								<img src="${imgUrlPrefix}/configure.png">
 							</a>
-							<a href="${deleteUrlPrefix}?id=${Recettes.ID}">
+							<a href="${deleteUrlPrefix}?id=${Recettes.id}">
 								<img src="${imgUrlPrefix}/delete.png">
 							</a>
 						</td>
@@ -53,8 +53,8 @@
 		$('#RecettesTable tbody tr').each(
 			(index, line) => $(line).click(
 				(event) => {
-					var RecettesID = event.currentTarget.ID.split('_')[1];
-					$("#RecettesIngredientsDialog").load('${RecettesIngredientsUrl}?RecettesID=' + RecettesID);
+					var RecettesId = event.currentTarget.id.split('_')[1];
+					$("#RecettesIngredientsDialog").load('${RecettesIngredientsUrl}?RecettesId=' + RecettesId);
 					$("#RecettesIngredientsDialog").dialog({
 						width: '60%',
 						maxWidth: 800

@@ -68,13 +68,13 @@ public class IngredientsController {
 	@RequestMapping(path = "/edit", method = RequestMethod.POST)
 	public String createOrUpdate(final HttpServletRequest request) {
 		final String noms = request.getParameter("noms");
-		final Integer Unit = Integer.parseInt(request.getParameter("Unit"));
+		final Integer unit = Integer.parseInt(request.getParameter("unit"));
 		final Ingredients ingredients = new Ingredients();
 		if (request.getParameterMap().containsKey("id")) {
 			ingredients.setId(Integer.parseInt(request.getParameter("id")));
 		}
 		ingredients.setNoms(noms);
-		ingredients.setUnit(Unit);
+		ingredients.setUnit(unit);
 		// Si l'identifiant du produit est rempli, alors l'update se fera automatiquement à la place de l'insert.
 		this.repository.save(ingredients);
 		return "redirect:/Ingredients/";

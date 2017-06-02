@@ -10,37 +10,55 @@ public class Ingredients implements Serializable {
 
 	private String noms;
 
-	private Integer Unit;
+	private Integer unit;
 
+	
+	
+	
+	/* (non-Javadoc)
+	 * @see java.lang.Object#hashCode()
+	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + ((unit == null) ? 0 : unit.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((noms == null) ? 0 : noms.hashCode());
 		return result;
 	}
 
+	/* (non-Javadoc)
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj) {
+		if (this == obj)
 			return true;
-		}
-		if (obj == null) {
+		if (obj == null)
 			return false;
-		}
-		if (!(obj instanceof Ingredients)) {
+		if (getClass() != obj.getClass())
 			return false;
-		}
 		Ingredients other = (Ingredients) obj;
-		if (id == null) {
-			if (other.id != null) {
+		if (unit == null) {
+			if (other.unit != null)
 				return false;
-			}
-		} else if (!id.equals(other.id)) {
+		} else if (!unit.equals(other.unit))
 			return false;
-		}
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		if (noms == null) {
+			if (other.noms != null)
+				return false;
+		} else if (!noms.equals(other.noms))
+			return false;
 		return true;
 	}
+
+	
 
 	/*getter*/
 	
@@ -62,7 +80,7 @@ public class Ingredients implements Serializable {
 	 * @return the Unit
 	 */
 	public Integer getUnit() {
-		return Unit;
+		return unit;
 	}
 
 	/*setter*/
@@ -93,25 +111,21 @@ public class Ingredients implements Serializable {
 	 * @param Unit
 	 *            the stock to Unit
 	 */
-	public void setUnit(Integer Unit) {
-		this.Unit = Unit;
+	public void setUnit(Integer unit) {
+		this.unit = unit;
 	}
 
 	
-	
-	
-	
-	/**
-	 * Affichage d'un Ingredients en chaine de caractères.
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		final StringBuilder sb = new StringBuilder("{");
-		sb.append(" id=").append(this.id != null ? this.id : "null");
-		sb.append(", noms=").append(this.noms != null ? this.noms : "null");
-		sb.append(", Unit=").append(this.Unit != null ? this.Unit : "null");
-		sb.append(" }");
-		return sb.toString();
+		StringBuilder builder = new StringBuilder();
+		builder.append("Ingredients [id=").append(id).append(", noms=").append(noms).append(", unit=").append(unit)
+				.append("]");
+		return builder.toString();
 	}
+	
 
 }

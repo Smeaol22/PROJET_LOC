@@ -21,17 +21,14 @@
 				<c:url value="/Ingredients/delete.html" var="deleteUrlPrefix" />
 				<c:forEach items="${IngredientsList}" var="Ingredients">
 					<tr>
-						<td>${Ingredients.ID}</td>
+						<td>${Ingredients.id}</td>
 						<td>${Ingredients.noms}</td>
-						<td>${Ingredients.Unit}</td>
-						<td>
-							<a href="${editUrlPrefix}/${Ingredients.ID}.html">
-								<img src="${imgUrlPrefix}/edit.png">
-							</a>
-							<a href="${deleteUrlPrefix}?id=${Ingredients.ID}">
-								<img src="${imgUrlPrefix}/delete.png">
-							</a>
-						</td>
+						<td>${Ingredients.unit}</td>
+						<td><a href="${editUrlPrefix}/${Ingredients.id}.html"> <img
+								src="${imgUrlPrefix}/edit.png">
+						</a> <a href="${deleteUrlPrefix}?id=${Ingredients.id}"> <img
+								src="${imgUrlPrefix}/delete.png">
+						</a></td>
 					</tr>
 				</c:forEach>
 			</tbody>
